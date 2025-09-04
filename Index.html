@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Waste Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .bin {
+      display: inline-block;
+      width: 120px;
+      margin: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .level {
+      height: 100px;
+      border-radius: 6px 6px 0 0;
+    }
+    .ok { background: #2ecc71; }      /* Green */
+    .warn { background: #f1c40f; }    /* Yellow */
+    .full { background: #e74c3c; }    /* Red */
+    p {
+      margin: 8px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Smart Waste Management System</h1>
+
+  <div class="container">
+    <div class="bin">
+      <div class="level ok" style="height:40px"></div>
+      <p>Bin 1<br>40%</p>
+    </div>
+
+    <div class="bin">
+      <div class="level warn" style="height:70px"></div>
+      <p>Bin 2<br>70%</p>
+    </div>
+
+    <div class="bin">
+      <div class="level full" style="height:100px"></div>
+      <p>Bin 3<br>100%</p>
+    </div>
+  </div>
+</body>
+</html>
